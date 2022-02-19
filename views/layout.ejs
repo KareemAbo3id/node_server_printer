@@ -2,42 +2,63 @@
 <html lang="en">
 
 <head>
-    <!-- Primary Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Node PDF Creator</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="title" content="Node PDF Creator">
-    <meta name="description" content="Create your PDF and print it">
-    <meta name="author" content="Kareem Aboeid">
-    <meta name="language" content="english">
-    <!-- Favicon -->
-    <link rel=icon href="../media/Print-Icon.png" type=image/png>
-    <!-- Icons -->
-    <link rel="stylesheet" href="">
-    <!-- CSS -->
-    <link rel="stylesheet" href="">
-    <!-- JS -->
-    <script defer src=""></script>
+  <!-- Primary Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Node PDF Creator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="title" content="Node PDF Creator" />
+  <meta name="description" content="Create your PDF and print it" />
+  <meta name="author" content="Kareem Aboeid" />
+  <meta name="language" content="english" />
+  <!-- Favicon -->
+  <link rel=icon href="https://raw.githubusercontent.com/KareemAbo3id/node_server_printer/master/media/Print-Icon.png"
+    type=image/png>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 </head>
 
 <body>
+  <!-- Header -->
+  <header>
+    <!-- -------- START NAVBAR -------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Node.js Print</a>
+        <!-- Collapse Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links List -->
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                Create PDF
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- -------- END NAVBAR -------- -->
+  </header>
 
-    <!-- Header -->
-    <header>
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <%- body %>
+    </div>
+  </main>
 
-    </header>
+  <!-- Footer -->
+  <footer></footer>
 
-    <!-- Main -->
-    <main>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
